@@ -41,7 +41,7 @@ const ProductsScreen = () => {
 			stock: !productToToggle.stock,
 		}
 
-		const res = await fetch(`http://localhost:5000/${id}`, {
+		const res = await fetch(`http://localhost:5000/products/${id}`, {
 			method: 'PUT',
 			headers: {
 				'Content-type': 'application/json',
